@@ -36,15 +36,4 @@ class OsuIconWidget extends WidgetBase {
     return ['value' => $element];
   }
 
-  /**
-   * {@inheritdoc}
-   */
-  // public static function defaultSettings() {
-    // return [
-      // // Create the custom setting 'size', and
-      // // assign a default value of 60.
-      // 'size' => 60,
-    // ] + parent::defaultSettings();
-  // }
-
 }
