@@ -2,7 +2,7 @@
   "name": "osu-wams/osu_icon_field",
   "description": "Standard Drupal Installation Profile for OSU.",
   "minimum-stability": "stable",
-  "type": "drupal-custom-profile",
+  "type": "drupal-custom-module",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
