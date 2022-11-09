@@ -11,7 +11,7 @@
 function osu_icon_field_theme() {
   return [
     'osu_icon_field_formatter' => [
-      'variables' => ['icon' => NULL],
+      'variables' => ['icon' => NULL, 'size' => NULL],
       'template' => 'osu-icon-formatter',
     ],
   ];
