@@ -19,5 +19,5 @@ npm run watch
 To Generate a new list of OSU Icons, replace osu-icon-url with the latest url.
 
 ```shell
-node js/generate-icon-names.js osu-icon-url
+npm run generate-icons osu-icon-url
 ```
