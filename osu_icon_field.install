@@ -7,7 +7,6 @@ use Drupal\Core\Database\Database;
  */
 function osu_icon_field_update_9001(&$sandbox) {
   // Add the size column to all existing fields.
-  // Helper function from drupal.org=.
   osu_icon_field_add_helper('osu_icon', 'size');
 }
 
