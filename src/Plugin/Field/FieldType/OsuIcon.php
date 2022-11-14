@@ -8,7 +8,7 @@ use Drupal\Core\TypedData\DataDefinition;
 
 /**
  * Provides a field type of OSU Icon.
- * 
+ *
  * @FieldType(
  *   id = "osu_icon",
  *   label = @Translation("OSU Icon"),
@@ -33,6 +33,11 @@ class OsuIcon extends FieldItemBase {
           'size' => 'tiny',
           'not null' => FALSE,
         ],
+        'size' => [
+          'type' => 'text',
+          'size' => 'tiny',
+          'not null' => FALSE,
+        ],
       ],
     ];
   }
@@ -43,7 +48,7 @@ class OsuIcon extends FieldItemBase {
   public static function propertyDefinitions(FieldStorageDefinitionInterface $field_definition) {
     $properties = [];
     $properties['value'] = DataDefinition::create('string');
-
+    $properties['size'] = DataDefinition::create('string');
     return $properties;
   }
 
