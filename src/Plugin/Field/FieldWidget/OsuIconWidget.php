@@ -29,6 +29,8 @@ class OsuIconWidget extends WidgetBase {
     $size = isset($items[$delta]->size) ? $items[$delta]->size : '';
     $element['value'] = [
       '#type' => 'textfield',
+      '#title' => $this->t('Icon name'),
+      '#description' => $this->t('Start typing the name of the icon and it will show a list of available icons that match.'),
       '#default_value' => $value,
       '#size' => 10000,
       '#maxlength' => 100,
@@ -37,12 +39,8 @@ class OsuIconWidget extends WidgetBase {
     $element['size'] = [
       '#type' => 'select',
       '#title' => $this->t('Size'),
-      '#description' => $this->t('Set the Icon size'),
+      '#description' => $this->t('Set the Icon size relative to the font size'),
       '#options' => [
-        '' => $this->t('Default'),
-        'fa-xs' => $this->t('Extra Small'),
-        'fa-sm' => $this->t('Small'),
-        'fa-lg' => $this->t('Large'),
         'fa-2x' => $this->t('2x'),
         'fa-3x' => $this->t('3x'),
         'fa-4x' => $this->t('4x'),
@@ -52,7 +50,6 @@ class OsuIconWidget extends WidgetBase {
         'fa-8x' => $this->t('8x'),
         'fa-9x' => $this->t('9x'),
         'fa-10x' => $this->t('10x'),
-
       ],
       '#default_value' => $size,
     ];
