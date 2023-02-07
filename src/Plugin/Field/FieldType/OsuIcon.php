@@ -29,11 +29,13 @@ class OsuIcon extends FieldItemBase {
         // List the values that the field will save. This
         // field will only save a single value, 'value'
         'value' => [
+          'description' => 'The icon name.',
           'type' => 'text',
           'size' => 'tiny',
           'not null' => FALSE,
         ],
         'size' => [
+          'description' => 'The icon size.',
           'type' => 'text',
           'size' => 'tiny',
           'not null' => FALSE,
@@ -47,8 +49,12 @@ class OsuIcon extends FieldItemBase {
    */
   public static function propertyDefinitions(FieldStorageDefinitionInterface $field_definition) {
     $properties = [];
-    $properties['value'] = DataDefinition::create('string');
-    $properties['size'] = DataDefinition::create('string');
+    $properties['value'] = DataDefinition::create('string')
+      ->setLabel(t('Name'))
+      ->setDescription(t('The icon name.'));
+    $properties['size'] = DataDefinition::create('string')
+      ->setLabel(t('Size'))
+      ->setDescription(t('The size of the icon.'));
     return $properties;
   }
 
