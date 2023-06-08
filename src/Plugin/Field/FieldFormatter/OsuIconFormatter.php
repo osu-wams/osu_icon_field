@@ -25,8 +25,8 @@ class OsuIconFormatter extends FormatterBase {
     $elements = [];
 
     foreach ($items as $delta => $item) {
-      $icon = isset($item->getValue('values')['value']) ? $item->getValue('values')['value'] : '';
-      $iconSize = isset($item->getValue('values')['size']) ? $item->getValue('values')['size'] : '';
+      $icon = $item->getValue('values')['value'] ?? '';
+      $iconSize = $item->getValue('values')['size'] ?? '';
 
       $elements[$delta] = [
         '#theme' => 'osu_icon_field_formatter',

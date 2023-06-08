@@ -17,7 +17,6 @@ function osu_icon_field_theme() {
   ];
 }
 
-
 /**
  * Implements hook_page_attachments().
  */
