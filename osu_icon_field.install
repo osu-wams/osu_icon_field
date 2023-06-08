@@ -1,6 +1,11 @@
 <?php
 
-use Drupal\Core\Database\Database;
+/**
+ * @file
+ * Install, update, and uninstall functions for the OSU Icon Field module.
+ */
+
+use Drupal\Core\Entity\SQL\SqlContentEntityStorage;
 
 /**
  * Add a new column for size to all icon fields.
@@ -23,7 +28,6 @@ function osu_icon_field_update_9001(&$sandbox) {
  * @param string $new_property
  *   The Name of the new column to add.
  *
- * @return void
  * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
  * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
  */
@@ -36,7 +40,7 @@ function osu_icon_field_add_helper($field_type, $new_property) {
       $field_storage_definition = $manager->getFieldStorageDefinition($field_name, $entity_type_id);
       $storage = \Drupal::entityTypeManager()->getStorage($entity_type_id);
 
-      if ($storage instanceof \Drupal\Core\Entity\SQL\SqlContentEntityStorage) {
+      if ($storage instanceof SqlContentEntityStorage) {
         $table_mapping = $storage->getTableMapping([$field_name => $field_storage_definition]);
         $tables_names = $table_mapping->getDedicatedTableNames();
         $columns = $table_mapping->getColumnNames($field_name);
