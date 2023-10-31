@@ -35,7 +35,8 @@ var _iconList = require("./icon-list");
 
   Drupal.behaviors.iconPicker = {
     attach: function (context, settings) {
-      $('html', context).once('body').each(function (i, item) {
+      // $('html', context).once('body').each(function (i, item) {
+      $(once('body', context)).each(function (i, item) {
         // addSizeSelect();
         addAutoComplete();
       });
@@ -205,6 +206,6 @@ var _iconList = require("./icon-list");
   // return iconNames;
   // };
 
-})(jQuery, Drupal, drupalSettings);
+})(jQuery, Drupal, drupalSettings, once);
 
 },{"./icon-list":1}]},{},[2]);

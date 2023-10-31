@@ -16,7 +16,7 @@ function osu_icon_field_update_9001(&$sandbox) {
 }
 
 /**
- * Helper function to add new field properties to easing fields.
+ * Helper function to add new field properties to existing fields.
  *
  * Got the code from
  * https://www.drupal.org/project/drupal/issues/937442#comment-12586376 and
