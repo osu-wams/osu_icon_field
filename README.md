@@ -28,8 +28,8 @@ npm run generate-icons osu-icon-url
 
 ### FA Icons
 
-There are two lists of FA icons we need to generate, the normal solid ones and the branded ones. Replace the `<version>`
-with the appropriate version to generate for both.
+There are two lists of FA icons we need to generate, the normal solid ones and the branded ones. Replace the 
+`<version>` with the appropriate version to generate for both.
 
 ```shell
 npm run generate-fa-icons https://cdnjs.cloudflare.com/ajax/libs/font-awesome/<version>/css/fontawesome.min.css

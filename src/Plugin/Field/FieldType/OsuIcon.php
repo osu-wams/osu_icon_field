@@ -2,7 +2,6 @@
 
 namespace Drupal\osu_icon_field\Plugin\Field\FieldType;
 
-use Drupal\Core\Annotation\Translation;
 use Drupal\Core\Field\FieldItemBase;
 use Drupal\Core\Field\FieldStorageDefinitionInterface;
 use Drupal\Core\TypedData\DataDefinition;
