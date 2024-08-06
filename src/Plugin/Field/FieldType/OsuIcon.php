@@ -2,6 +2,7 @@
 
 namespace Drupal\osu_icon_field\Plugin\Field\FieldType;
 
+use Drupal\Core\Annotation\Translation;
 use Drupal\Core\Field\FieldItemBase;
 use Drupal\Core\Field\FieldStorageDefinitionInterface;
 use Drupal\Core\TypedData\DataDefinition;
@@ -12,6 +13,7 @@ use Drupal\Core\TypedData\DataDefinition;
  * @FieldType(
  *   id = "osu_icon",
  *   label = @Translation("OSU Icon"),
+ *   description = @Translation("An OSU Icon"),
  *   category = @Translation("Icons"),
  *   default_formatter = "osu_icon_formatter",
  *   default_widget = "osu_icon_widget",
