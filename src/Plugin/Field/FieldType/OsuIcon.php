@@ -25,7 +25,7 @@ class OsuIcon extends FieldItemBase {
    */
   public static function schema(FieldStorageDefinitionInterface $field_definition) {
     return [
-      // Columns contains the values that the field will store.
+      // Columns contain the values that the field will store.
       'columns' => [
         // List the values that the field will save. This
         // field will only save a single value, 'value'.
